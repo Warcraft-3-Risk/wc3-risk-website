@@ -39,6 +39,11 @@ jobs:
           cd risk-website  # Change to the website directory
           npm install  # Or `yarn install` if you're using Yarn
 
+      - name: Run Husky install
+        run: |
+          cd ..  # Go back to the root directory (WC3-Risk-Website)
+          GIT_DIR=$(pwd)/.git husky install  # Set GIT_DIR to the root .git directory
+
       - name: Build the app
         run: |
           cd risk-website  # Change to the website directory
