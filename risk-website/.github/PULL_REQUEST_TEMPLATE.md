@@ -1,3 +1,5 @@
+@@ -1,34 +1,26 @@
+
 ## 🚀 Pull Request
 
 ### 📋 Type of change - Type x in the boxes to mark changes
@@ -11,13 +13,19 @@
 
 ### 📸 Screenshots (if applicable)
 
-Please attach screenshots to help explain the changes made.
-
----
+## Please attach screenshots to help explain the changes made.
 
 ### 📄 Description
 
 Provide a short description of the changes you made and why.
+
+---
+
+### ✅ Checklist
+
+- [ ] My code follows the code style of this project.
+- [ ] I have made corresponding changes to the documentation.
+- [ ] It works on local server.
 
 ---
 
