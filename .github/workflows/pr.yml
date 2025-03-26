@@ -29,15 +29,17 @@ jobs:
       - name: Cache npm dependencies
         uses: actions/cache@v4
         with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          path: risk-website/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('risk-website/**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
 
       - name: Install dependencies
         run: |
+          cd risk-website  # Change to the website directory
           npm install  # Or `yarn install` if you're using Yarn
 
       - name: Build the app
         run: |
+          cd risk-website  # Change to the website directory
           npm run build  # Or your preferred build command (e.g., `yarn build`)
