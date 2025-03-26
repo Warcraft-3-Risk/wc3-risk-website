@@ -34,17 +34,22 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Install dependencies
+      - name: Install dependencies in risk-website
         run: |
-          cd risk-website  # Change to the website directory
-          npm install  # Or `yarn install` if you're using Yarn
+          cd risk-website  # Go into the risk-website directory
+          npm install  # Install dependencies in risk-website
 
-      - name: Run Husky install
+      - name: Run Husky install (in the root directory)
         run: |
           cd ..  # Go back to the root directory (WC3-Risk-Website)
-          GIT_DIR=$(pwd)/.git husky install  # Point husky to the root `.git` directory
+          npx husky install  # Ensure Husky is properly installed in the root directory
+
+      - name: Run pre-commit hook (Husky)
+        run: |
+          cd risk-website  # Go back into the risk-website directory
+          npx husky run pre-commit  # Run the pre-commit hook (if you have it defined in .husky/pre-commit)
 
       - name: Build the app
         run: |
-          cd risk-website  # Change to the website directory
-          npm run build  # Or your preferred build command (e.g., `yarn build`)
+          cd risk-website  # Go into the website directory
+          npm run build  # Run your build command (e.g., `yarn build`)
