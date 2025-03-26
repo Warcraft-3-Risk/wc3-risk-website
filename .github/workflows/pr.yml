@@ -26,6 +26,11 @@ jobs:
         with:
           node-version: "20"
 
+      - name: List directory contents
+        run: |
+          echo "Listing contents of the root directory"
+          ls -al
+
       - name: Cache npm dependencies
         uses: actions/cache@v4
         with:
