@@ -1,3 +1,5 @@
+@@ -1,34 +1,26 @@
+
 ## 🚀 Pull Request
 
 ### 📋 Type of change - Type x in the boxes to mark changes
@@ -11,9 +13,7 @@
 
 ### 📸 Screenshots (if applicable)
 
-Please attach screenshots to help explain the changes made.
-
----
+## Please attach screenshots to help explain the changes made.
 
 ### 📄 Description
 
