@@ -1,0 +1,8 @@
+{
+    "home": {
+      "title": "Welcome to the WC3 Risk Website",
+      "description": "This is a boilerplate for our application.",
+      "footerText": "© {{year}} Your App Name"
+    }
+  }
+  
