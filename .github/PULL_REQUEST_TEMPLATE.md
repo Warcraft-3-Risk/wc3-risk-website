@@ -1,5 +1,3 @@
-@@ -1,34 +1,26 @@
-
 ## 🚀 Pull Request
 
 ### 📋 Type of change - Type x in the boxes to mark changes
