@@ -41,7 +41,7 @@ jobs:
 
       - name: Install dependencies in risk-website
         run: |
-          cd risk-website  # Go into the risk-website directory
+          cd risk-website/  # Go into the risk-website directory
           npm install  # Install dependencies in risk-website
 
       - name: Run Husky install (in the root directory)
