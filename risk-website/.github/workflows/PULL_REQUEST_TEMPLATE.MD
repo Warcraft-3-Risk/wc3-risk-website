@@ -21,14 +21,6 @@ Provide a short description of the changes you made and why.
 
 ---
 
-### ✅ Checklist
-
-- [ ] My code follows the code style of this project.
-- [ ] I have made corresponding changes to the documentation.
-- [ ] It works on local server.
-
----
-
 ### 📎 Additional context
 
 Add any other context about the pull request here
