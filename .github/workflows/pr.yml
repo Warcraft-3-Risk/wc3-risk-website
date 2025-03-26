@@ -42,7 +42,7 @@ jobs:
       - name: Run Husky install
         run: |
           cd ..  # Go back to the root directory (WC3-Risk-Website)
-          GIT_DIR=$(pwd)/.git husky install  # Set GIT_DIR to the root .git directory
+          GIT_DIR=$(pwd)/.git husky install  # Point husky to the root `.git` directory
 
       - name: Build the app
         run: |
